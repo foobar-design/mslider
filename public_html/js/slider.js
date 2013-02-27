@@ -26,9 +26,7 @@
 			
 			$(".linksul").children("span").removeClass("active");
 
-			$(this).
-
-			$(this).animate({
+                        (this).animate({
 				"opacity" : "0.15"
 			}, 700, function() {
 				$(this).css({
@@ -48,12 +46,10 @@
 			});
 
 			mslidercaption.html("<div style=\"padding: 5px;\">" + caption + "</div>");
-			
-
 
 			mslidercaption.delay(1000).animate({
-				"margin-bottom" : "30px",
-				"height" : options.cheight,
+                                "height" : options.cheight,
+				"margin-bottom" : "20px",
 			}, 1400, function() {
 				animation = false;
 			});
@@ -78,12 +74,14 @@
 			var numImages = $(ul).children("li").length;
 
 			mslider.minit(options);
-
+                        
 			var url = ul.children("li").eq(counter).children("img").eq(0).attr("src");
 
 			var caption = ul.children("li").eq(counter).children("span").eq(0).html();
 
 			mslider.showImage(url, 0, caption, options);
+                        
+                      
 			
 			$(".mslider-right span, .mslider-left span").click(function(e) {
 				
